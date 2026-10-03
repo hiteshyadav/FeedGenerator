@@ -13,6 +13,7 @@ The executable JAR bundles its runtime logging dependencies; the existing `java 
 Use standard input and output (commands below are for cmd.exe):
 
 ```
+mvn clean verify
 mvn clean install
 java -Xmx32m -jar target/FeedGenerator-1.0-SNAPSHOT.jar xml < large.in > result.xml
 java -Xmx32m -jar target/FeedGenerator-1.0-SNAPSHOT.jar csv < large.in > result.csv
